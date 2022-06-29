@@ -1,7 +1,7 @@
 .newClientsContainer {
     display: flex;
     flex-direction: column;
-    margin-top: 6.4rem;
+    margin-top: 3rem;
     gap: 1.1rem;
     font-family: 'Arial';
     font-style: normal;
@@ -32,7 +32,7 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10rem;
+        margin-bottom: 4.8rem;
 
         .aboutUsContainer {
             max-width: 64rem;
@@ -89,3 +89,18 @@
         }
     }
 }
+
+.mainTitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+    color: #004B71;
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.5rem;
+    }
