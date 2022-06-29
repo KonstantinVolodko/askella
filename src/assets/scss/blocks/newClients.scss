@@ -1,0 +1,91 @@
+.newClientsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.4rem;
+    gap: 1.1rem;
+    font-family: 'Arial';
+    font-style: normal;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7rem;
+
+    .servicesTitle {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        text-transform: uppercase;
+        color: #004B71;
+        margin-bottom: 3rem;
+    }
+
+    .firstBlock {
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+        max-width: 130rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10rem;
+
+        .aboutUsContainer {
+            max-width: 64rem;
+            .titleContainer {
+                display: flex;
+                gap: 0.8rem;
+            }
+    
+            .dot {
+                fill: #00B1E4;
+                width: 1.2rem;
+                height: 1rem;
+            }
+    
+            .title {
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 150%;
+                text-transform: uppercase;
+                color: #004B71;
+            }
+    
+            .commosContainer {
+                display: flex;
+                .commosFirst {
+                    fill: #004B71;
+                    width: 1.4rem;
+                    height: 3.2rem;
+                }   
+            
+                .commosSecond {
+                    fill: #00B1E4;
+                    width: 1.4rem;
+                    height: 3.2rem;
+                }
+            }
+        }
+    
+        .aboutContentContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-top: 1.6rem;
+    
+            .textContainer {
+                display: flex;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: #42515A;
+                gap: 1rem;
+                margin-left: 5.6rem;
+            }
+        }
+    }
+}
