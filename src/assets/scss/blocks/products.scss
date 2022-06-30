@@ -1,0 +1,44 @@
+.productsContainer {
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial';
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+
+    .container {
+        width: 60.6rem;
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+
+        h1 {
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 0.4rem;
+        }
+
+        .subtitle {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 150%;
+            color: #939DA3;
+            margin-bottom: 2rem;
+        }
+
+        .text {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 150%;
+            color: #42515A;
+        }
+    }
+}

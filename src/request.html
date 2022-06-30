@@ -16,3 +16,54 @@
 </div>
 
 <div class="mainTitle">Заявка на перевозку и аренду вагонов</div>
+
+<div class="requestContainer">
+    <p class="title">Для осуществления перевозки вы можете заполнить форму ниже.</p>
+
+    <div class="instructionContainer">
+        <h1 class="instrictionTitle">Инструкция по заполнению формы:</h1>
+        <p class="instructionSubtitle">1. Скачайте и заполните один из предложенных файлов:</p>
+        <div class="downloadContainer">
+            <a href="#" download class="downloadItem">
+                <div>
+                    <img src="./assets/images/request/pdfIco.svg" alt="#">
+                </div>
+                <div class="downloadDescription">
+                    <p class="blueTitle">Заявка на перевозку во внутрироссийском сообщении</p>
+                    <p class="weight">39.5 Kb</p>
+                </div>
+            </a>
+            <a href="#" download class="downloadItem">
+                <div>
+                    <img src="./assets/images/request/pdfIco.svg" alt="#">
+                </div>
+                <div class="downloadDescription">
+                    <p class="blueTitle">Заявка на перевозку экспортируемых грузов</p>
+                    <p class="weight">39.5 Kb</p>
+                </div>
+            </a>
+        </div>
+        <p class="instructionSubtitle">2. Далее введите свои контактные данные в указанные поля, прикрепите заполненный файл и нажмите «Отправить».</p>
+        <form class="formContainer">
+            <div class="formTitle">Form</div>
+            <input class="name" type="text" placeholder="Full Name">
+            <input class="phone" type="number" placeholder="Phone">
+            <input class="email" type="email" placeholder="E-mail">
+            <input class="company" type="text" placeholder="Company">
+            <div class="addFileContainer">
+                <p>Transportation request file</p>
+                <label class="addBtn" for="fileAdd">
+                    <div>
+                        choose file
+                    </div>
+                    
+                </label>
+                <input class="addFile" type="file" id="fileAdd">
+            </div>
+            <div class="btnSendContainer">
+                <button>SEND</button>
+            </div>
+            
+        </form>
+    </div>
+</div>

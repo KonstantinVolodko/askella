@@ -1,0 +1,44 @@
+.clientsContainer {
+    margin-top: 3rem;
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial';
+    font-style: normal;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 10rem;
+
+    .leftContainer, .rightContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .container {
+            display: flex;
+            padding: 2rem;
+            gap: 3rem;
+            border: 1px solid #939DA3;
+            align-items: center;
+            width: 60.3rem;
+    
+            h1 {
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: #004B71;
+            }
+    
+            p {
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: #42515A;
+            }
+        }
+    }
+
+
+    
+}

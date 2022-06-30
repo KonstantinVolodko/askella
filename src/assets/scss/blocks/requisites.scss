@@ -1,0 +1,65 @@
+.requisitesContainer {
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial';
+    font-style: normal;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    table {
+        border-collapse: collapse;
+        border: 0.1rem solid #DDDDDD;
+    }
+    
+
+    .requisitesTable {
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: #42515A;
+        
+        thead {
+            background: #004B71;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.9rem;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+                
+            tr {
+                td {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+
+        tbody {
+
+            .firstColumn {
+                width: 5.2rem;
+            }
+
+            .secondContainer {
+                width: 56rem;
+            }
+
+            tr {
+                td {
+                    padding: 2rem;
+                    border-collapse: collapse;
+                    border: 0.1rem solid #DDDDDD;
+                }
+            }
+        }
+
+        
+    }
+}

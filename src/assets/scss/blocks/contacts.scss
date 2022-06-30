@@ -1,0 +1,108 @@
+.contactsMainContainer {
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial';
+    font-style: normal;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+
+    .subTitle {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: #42515A;
+        margin-bottom: 2.2rem;
+    }
+
+    .contentContainer {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .leftContainer {
+        width: 60.6rem;
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.9rem;
+            text-transform: uppercase;
+            color: #42515A;
+        }
+
+        .geoContainer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 4.2rem;
+            margin-top: 2.2rem;
+            .geoIco {
+                width: 2.8rem;
+                height: 2.8rem;
+            }
+    
+            div {
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: #42515A;
+            }
+        }
+
+        .contactsContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+            .contactsItem {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    }
+
+    .mapContainer {
+        .map {
+            
+            width: 60.6rem;
+            height: 34rem;
+        }
+    }
+
+    .btnContainer {
+        display: flex;
+        gap: 3rem;
+        button {
+            display: flex;
+            border: 0.1rem solid #004B71;
+            background: none;
+            padding: 2rem;
+            width: 60.6rem;
+            align-items: center;
+            gap: 2rem;
+            
+            
+            
+                .textContainer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+                    h1 {
+                        font-weight: 700;
+                        font-size: 2rem;
+                        line-height: 2.9rem;
+                        text-transform: uppercase;
+                        color: #42515A;
+                    }
+                }
+            
+
+            
+            
+        }
+    }
+}

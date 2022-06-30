@@ -1,0 +1,29 @@
+.directorContainer {
+    margin-top: 3rem;
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #42515A;
+    margin-bottom: 10rem;
+
+    h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.9rem;
+        color: #42515A;
+        margin-bottom: 2.8rem;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,176 @@
+.requestContainer {
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial';
+    font-style: normal;
+    
+    .title {
+        margin-top: 3rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: #42515A;
+    }
+
+    .instructionContainer {
+        .instrictionTitle {
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 150%;
+            color: #42515A;
+            margin-top: 3rem;
+            margin-bottom: 1.6rem;
+        }
+
+        .instructionSubtitle {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 150%;
+            color: #42515A;
+            margin-bottom: 2rem;
+        }
+
+        .downloadContainer {
+            display: flex;
+            gap: 3.2rem;
+            margin-bottom: 4rem;
+            
+            .downloadItem {
+                display: flex;
+                border: 1px solid #42515A;
+                width: 28.6rem;
+                height: 8.8rem;
+                padding: 2rem;
+                gap: 2.6rem;
+                align-items: center;
+                text-decoration: none;
+
+                .downloadDescription {
+                    .blueTitle {
+                        font-weight: 400;
+                        font-size: 1.2rem;
+                        line-height: 130%;
+                        color: #004B71;
+                    }
+
+                    .weight {
+                        font-weight: 400;
+                        font-size: 1.2rem;
+                        line-height: 130%;
+                        color: #939DA3;
+                    }
+                }
+            }
+        }
+
+        .formContainer {
+            width: 80rem;
+            padding-left: 13.5rem;
+            padding-top: 5.5rem;
+            padding-right: 13.5rem;
+            padding-bottom: 5.5rem;
+            display: flex;
+            flex-direction: column;
+            border: 0.4rem solid #004B71;
+            gap: 2rem;
+            position: relative;
+            margin-bottom: 10rem;
+            margin-top: 4rem;
+
+            .formTitle {
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 2.9rem;
+                padding: 1rem;
+                text-transform: uppercase;
+                color: #004B71;
+                background-color: #FFFFFF;
+                position: absolute;
+                top: -2.6rem;
+                left: 33.2rem;
+            }
+
+            .name, .phone, .email, .company  {
+                height: 4rem;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: #939DA3;
+                background: #E6EDEF;
+                clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+                padding-left: 5rem;
+                border: none;
+                outline: none;
+            }
+
+        }
+
+        .addFileContainer {
+            display: flex;
+            justify-content: center;
+            gap: 6.8rem;
+            p {
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: #42515A;
+            }
+
+            .addFile {
+                display: none;
+            }
+
+            .addBtn {
+                height: 3rem;
+                width: 19.2rem;
+                // border: 0.1rem solid #E30016;
+                cursor: pointer;
+                background-color: #E30016;
+                clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+
+                div {
+                    margin-top: 0.1rem;
+                    margin-bottom: 0.1rem;
+                    background-color: #FFFFFF;
+                    height: 2.8rem;
+                    margin-left: 0.3rem;
+                    margin-right: 0.3rem;
+                    clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    text-transform: uppercase;
+                    color: #E30016;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+        }
+
+        .btnSendContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            button {
+                width: 26rem;
+                background: #E30016;
+                height: 4rem;
+                border: none;
+                clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                align-items: center;
+                color: #FFFFFF;
+            }
+            
+        }
+
+
+
+    }
+}

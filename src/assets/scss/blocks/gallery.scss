@@ -1,0 +1,33 @@
+.galleryContainer {
+    margin-bottom: 10rem;
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial';
+    font-style: normal;
+    margin-top: 4rem;
+    .galleryTitle {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.9rem;
+        text-transform: uppercase;
+        color: #42515A;
+        margin-bottom: 2rem;
+    }
+
+    .galleryBlockContainer {
+        display: flex;
+        gap: 3.2rem;
+
+        .container {
+            p {
+                margin-top: 1rem;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: #42515A;
+            }
+        }
+    }
+}

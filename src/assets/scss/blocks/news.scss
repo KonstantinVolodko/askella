@@ -1,0 +1,50 @@
+.newsContainer {
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial';
+    font-style: normal;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+
+    .newsBlockContainer {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 0.1rem solid #DDDDDD;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            width: 40rem;
+            
+
+            .date {
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: #939DA3;
+            }
+
+            .title {
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: #42515A;
+            }
+
+            .subtitle {
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 150%;
+                color: #42515A;
+            }
+        }
+    }
+
+    
+}
