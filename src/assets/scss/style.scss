@@ -42,26 +42,26 @@ body {
   }
 }
 
-button {
+// button {
   
-}
+// }
 
 img {
   image-rendering: crisp-edges;
   image-rendering: -webkit-optimize-contrast;
 }
 
-a {
+// a {
   
-}
+// }
 
 svg {
   transition: all 0.1s linear;
 }
 
-.chevron {
+// .chevron {
   
-}
+// }
 
 /* Vendors */
 
@@ -84,6 +84,9 @@ svg {
 @import './blocks/director.scss';
 @import './blocks/strategy.scss';
 @import './blocks/groupCompany.scss';
+@import './blocks/swiper.scss';
+@import './blocks/aboutCompany.scss';
+@import './blocks/workInCompany.scss';
 
 // @import "blocks/menu";
 

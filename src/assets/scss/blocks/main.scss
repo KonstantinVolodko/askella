@@ -1,6 +1,307 @@
 .container {
     font-family: 'Arial';
     font-style: normal;
+    
+
+    .swiperContainer {
+        max-width: 130rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Arial';
+        font-style: normal;
+        position: relative;
+        margin-top: 5.8rem;
+
+        .swiperBtnContainer {
+            display: flex;
+            position: absolute;
+            z-index: 10;
+            bottom: 0;
+            left: 57.5%;
+            button {
+                border: none;
+                background-color: #004B71;
+                height: 4.2rem;
+                width: 7.55rem;
+                clip-path: polygon(0 0, 65% 0, 100% 100%, 35% 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .prewArrow {
+                    fill: #FFFFFF;
+                    width: 2rem;
+                    height: 2rem;
+                }
+
+                .nextArrow {
+                    fill: #FFFFFF;
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+
+        .newClients {
+            width: 27rem;
+            height: 23.4rem;
+            background: black;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            right: 0.2%;
+
+            p {
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding-bottom: 2rem;
+                
+            }
+        }
+
+        .history {
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+            width: 27rem;
+            height: 21.5rem;
+            background: gray;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            position: absolute;
+            z-index: 1;
+            top: 52%;
+            right: 0.2%;
+
+            p {
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding-top: 3rem;
+                
+            }
+        }
+
+        .strategy {
+            clip-path: polygon(48% 0%, 0% 100%, 100% 100%);
+            width: 26rem;
+            height: 21.7rem;
+            background: red;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            right: 10.55%;
+            z-index: 2;
+
+            p {
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding-bottom: 2rem;
+                
+            }
+        }
+
+        
+    }
+
+    .servicesSliderContainer {
+        background: url(../images/main/bigBackground.jpg);
+        font-family: 'Arial';
+        font-style: normal;
+        min-width: 0;
+        padding-top: 10rem;
+        margin-top: 10rem;
+        padding-bottom: 12.3rem;
+        
+
+        
+
+        .helpContainer {
+            max-width: 130rem;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            
+            
+            .prevBtnServices {
+                background: rgba(255, 255, 255, 0.8);
+                border: none;
+                width: 7.5rem;
+                height: 4.2rem;
+                clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                position: absolute;
+                z-index: 10;
+                top: 50%;
+                left: -14rem;
+
+                .prewArrowServices {
+                    width: 2rem;
+                    height: 2rem;
+                    fill: #004B71;
+                }
+            }
+
+            .nextBtnServices {
+                background: rgba(255, 255, 255, 0.8);
+                border: none;
+                width: 7.5rem;
+                height: 4.2rem;
+                clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                z-index: 10;
+                position: absolute;
+                top: 50%;
+                right: -11.6rem;
+
+                .nextArrowServices {
+                    width: 2rem;
+                    height: 2rem;
+                    fill: #004B71;
+                }
+            }
+
+            .sliderElem {
+                width: 46.4rem;
+                display: flex;
+                min-width: 0;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #FFFFFF;
+                width: 39.4rem;
+                height: 46.4rem;
+                .imgContainer {
+                    
+                }
+    
+                a {
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 100%;
+                    color: #42515A;
+                    margin-top: 2rem;
+                }
+    
+                .textContainer {
+                    margin-top: 2.6rem;
+                    padding-right: 3.3rem;
+                    padding-left: 3.3rem;
+    
+                    
+                    
+                    h1 {
+                        font-weight: 700;
+                        font-size: 1.8rem;
+                        line-height: 150%;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #42515A;
+                        margin-bottom: 0.8rem;
+                    }
+    
+                    p {
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        line-height: 150%;
+                        text-align: center;
+                        color: #42515A;
+                    }
+                }
+            }
+        }
+
+        .subtitle {
+            width: 50rem;
+            margin-top: 1.5rem;
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 150%;
+            color: #FFFFFF;
+            margin-bottom: 6.4rem;
+        }
+
+        .titleContainer {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 2.9rem;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            .commosContainer {
+                display: flex;
+                align-items: center;
+                .commosFirst {
+                    width: 1.4rem;
+                    height: 3.2rem;
+                    fill: #00B1E4;
+                }
+
+                .commosSecond {
+                    width: 1.4rem;
+                    height: 3.2rem;
+                    fill: #E30016;
+                }
+                
+            }
+        }
+    }
+
+    .mapContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 51.8rem;
+        height: 45rem;
+        padding-top: 4.75rem;
+        background: rgba(255, 255, 255, 0.8);
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        top: 0;
+        z-index: 1;
+        left: 49.5%;
+
+        .textContainer {
+            display: flex;
+            align-items: center;
+            .title {
+                width: 14rem;
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2.9rem;
+                color: #42515A;
+            }
+
+            .number {
+                font-weight: 700;
+                font-size: 5.9rem;
+                line-height: 6.9rem;
+                color: #00B1E4;
+            }
+        }
+        
+    }
 
     .firstBlock {
         display: flex;
@@ -68,16 +369,11 @@
     }
 
 
-    .servicesSliderContainer {
-        max-width: 130rem;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10rem;
-    }
 
     .helperContainer {
-        background-color: #E7E7E7;
+        background: url(../images/main/grayBackground.jpg);
+        background-position-y: bottom;
+        background-repeat: no-repeat;
     }
 
     .partnersContainer {
@@ -131,6 +427,7 @@
             padding-left: 2.6rem;
             background: #FFFFFF;
             padding-bottom: 6.4rem;
+            padding-top: 4rem;
 
             .contactTitle {
                 font-weight: 700;
@@ -225,3 +522,18 @@
     
     
 }
+
+
+
+// <div class="swiper-slide">
+                    // <div class="sliderElem">
+                    //     <div class="imgContainer">
+                    //         <img src="./assets/images/main/transport.svg" alt="#">
+                    //     </div>
+                    //     <div class="textContainer">
+                    //         <h1>CARGO TRANSPORTATION</h1>
+                    //         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
+                    //     </div>
+                    //     <a href="#">Learn more</a>
+                    // </div>
+//                   </div>

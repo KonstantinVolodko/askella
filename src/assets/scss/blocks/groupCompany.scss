@@ -88,4 +88,43 @@
             }
         }
     }
+
+    .rtkContainer {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        font-family: 'Arial';
+        font-style: normal;
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+
+        .container {
+            display: flex;
+            border: 0.1rem solid #939DA3;
+            width: 100%;
+
+            .imgContainer {
+                width: 37.5rem;
+                padding-left: 0.85rem;
+                padding-top: 2.75rem;
+                padding-bottom: 2.65rem;
+                
+                img {
+                    border-right: 0.1rem solid #939DA3;
+                }
+            }
+
+            .textContainer {
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: #42515A;
+                padding-left: 3.5rem;
+            }
+        }
+
+        
+    }
 }
