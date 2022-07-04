@@ -1,0 +1,127 @@
+.historyContainer {
+    font-family: 'Arial';
+    font-style: normal;
+    max-width: 130rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+    .tabs__nav {
+        display: flex;
+        gap: 3rem;
+
+        .tabs__nav-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 18.2rem;
+            padding-top: 1.8rem;
+            padding-bottom: 1.7rem;
+            background: #00B1E4;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.9rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            border: none;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
+
+        .tabs__nav-btn.active {
+            background: #004B71;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.9rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        
+    }
+
+    .tabs__content {
+        margin-top: 10rem;
+        .tabs__item {
+            display: none;
+        }
+        
+        .tabs__item.active {
+            display: flex;
+            width: 100%;
+        }
+
+        .dateContainer {
+            display: flex;
+                gap: 2.1rem;
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2.9rem;
+                text-align: center;
+                text-transform: uppercase;
+                color: #42515A;
+                
+
+                .compozContainer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .line {
+                        width: 0.1rem;
+                        background: #959CA1;
+                        height: 48.5rem;
+                    }
+                    .sqrt {
+                        border: 0.1rem solid #959CA1;
+                        transform: rotate(45deg);
+                        width: 1.4rem;
+                        height: 1.4rem;
+                    }
+                }
+            
+        }
+
+        .bannerContainer {
+            width: 100%;
+            padding-top: 7rem;
+            .banner {
+                width: 100%;
+                clip-path: polygon(100% 0, 100% 65%, 96% 100%, 0 100%, 0 0);
+                background-color: #004B71;
+                padding-top: 3.6rem;
+                padding-bottom: 3.6rem;
+                padding-left: 10.6rem;
+                padding-right: 13.6rem;
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 4rem;
+                flex-direction: column;
+        
+                p {
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    color: #FFFFFF;
+        
+                }
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 2rem;
+                    line-height: 2.9rem;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        
+    
+    }
+
+    
+    
+}
