@@ -1,6 +1,10 @@
 .container {
     font-family: 'Arial';
     font-style: normal;
+
+    @include breakpoint($lg-bp) {
+        
+    }
     
 
     .swiperContainer {
@@ -12,6 +16,17 @@
         font-style: normal;
         position: relative;
         margin-top: 5.8rem;
+
+        @include breakpoint($lg-bp) {
+            display: none;
+        }
+
+        .swiper-slide {
+            img {
+                width: 129rem;
+                height: 45rem;
+            }
+        }
 
         .swiperBtnContainer {
             display: flex;
@@ -46,7 +61,10 @@
         .newClients {
             width: 27rem;
             height: 23.4rem;
-            background: black;
+            background: url(../images/main/newClients.png);
+            background-position: bottom;
+            background-size: 100%;
+            background-color: #42515A;
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
             display: flex;
             align-items: flex-end;
@@ -72,7 +90,10 @@
             clip-path: polygon(50% 100%, 0 0, 100% 0);
             width: 27rem;
             height: 21.5rem;
-            background: gray;
+            background: url(../images/main/history.png);
+            background-color: #42515A;
+            background-size: 130%;
+            background-position: bottom;
             display: flex;
             align-items: flex-start;
             justify-content: center;
@@ -95,9 +116,12 @@
 
         .strategy {
             clip-path: polygon(48% 0%, 0% 100%, 100% 100%);
+            background: url(../images/main/chess.png);
+            background-color: #42515A;
             width: 26rem;
             height: 21.7rem;
-            background: red;
+            background-size: 100%;
+            background-position: bottom;
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -139,14 +163,40 @@
             margin-left: auto;
             margin-right: auto;
             position: relative;
+            @include breakpoint($lg-bp) {
+                padding-left: 1rem;
+            }
+
 
             .backgroundContainer {
                 display: flex;
-                gap: 4.9rem;
+                gap: 3.6%;
                 align-items: flex-end;
                 position: absolute;
                 top: 84.1%;
                 z-index: 1;
+
+                @include breakpoint($lg-bp) {
+                    display: none;
+                }
+
+                @include breakpoint($xl-bp) {
+                    gap: 3.7%;
+                }
+                
+                .triangle {
+                    img {
+                        width: 39.4rem;
+                        height: 5.9rem;
+                    }
+                }
+
+                .rectangle {
+                    img {
+                        width: 39.4rem;
+                        height: 9.9rem;
+                    }
+                }
             }
             
             
@@ -161,10 +211,13 @@
                 top: 50%;
                 left: -14rem;
 
+                
+
                 .prewArrowServices {
                     width: 2rem;
                     height: 2rem;
                     fill: #004B71;
+                    
                 }
             }
 
@@ -178,16 +231,21 @@
                 position: absolute;
                 top: 50%;
                 right: -11.6rem;
+                @include breakpoint($xl-bp) {
+                    display: none;
+                }
 
                 .nextArrowServices {
                     width: 2rem;
                     height: 2rem;
                     fill: #004B71;
+                    @include breakpoint($xl-bp) {
+                        display: none;
+                    }
                 }
             }
 
             .sliderElem {
-                width: 46.4rem;
                 display: flex;
                 min-width: 0;
                 justify-content: center;
@@ -196,8 +254,15 @@
                 background-color: #FFFFFF;
                 width: 39.4rem;
                 height: 46.4rem;
+
+                @include breakpoint($sm-bp) {
+                    width: 30rem;
+                }
                 .imgContainer {
-                    
+                    img {
+                        width: 7rem;
+                        height: 8rem;
+                    }
                 }
     
                 a {
@@ -246,6 +311,10 @@
             line-height: 150%;
             color: #FFFFFF;
             margin-bottom: 6.4rem;
+
+            @include breakpoint($sm-bp) {
+                width: auto;
+            }
         }
 
         .titleContainer {
@@ -300,6 +369,7 @@
                 font-size: 2rem;
                 line-height: 2.9rem;
                 color: #42515A;
+
             }
 
             .number {
@@ -322,6 +392,21 @@
         margin-right: auto;
         margin-top: 10rem;
 
+        @include breakpoint($xl-bp) {
+            flex-direction: column;
+        }
+
+        .imgContainer {
+            img {
+                width: 60rem;
+                
+            }
+
+            @include breakpoint($sm-bp) {
+                display: none;
+            }
+        }
+
         .aboutUsContainer {
             max-width: 50rem;
             .titleContainer {
@@ -341,6 +426,10 @@
                 line-height: 2.9rem;
                 text-transform: uppercase;
                 color: #42515A;
+
+                @include breakpoint($lg-bp) {
+                    padding-left: 1rem;
+                }
             }
     
             .commosContainer {
@@ -405,6 +494,9 @@
             color: #42515A;
             p {
                 margin-right: 0.8rem;
+                @include breakpoint($lg-bp) {
+                    padding-left: 1rem;
+                }
             }
             .commosFirst {
                 fill: #004B71;
@@ -425,6 +517,18 @@
             gap: 3rem;
             margin-top: 4rem;
 
+            @include breakpoint($xl-bp) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            a {
+                img {
+                    width: 29rem;
+                    height: 38.6rem;
+                }
+            }
+
             .btnOpenModal {
                 border: none;
                 padding: 0;
@@ -439,6 +543,11 @@
             padding-bottom: 6.4rem;
             padding-top: 4rem;
 
+            @include breakpoint($sm-bp) {
+                padding-left: 0;
+            }
+
+
             .contactTitle {
                 font-weight: 700;
                 font-size: 2rem;
@@ -452,6 +561,11 @@
             .inpContainer {
                 display: flex;
                 gap: 1.85rem;
+
+                @include breakpoint($lg-bp) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
 
                 input {
                     background: #E6EDEF;
@@ -516,15 +630,23 @@
         left: 50%;
         transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
         background: #fff;
-        width: 400px;
-        padding: 25px;
+        width: 40rem;
+        padding: 2.5rem;
         transition: 0.5s all;
         display: flex;
         width: 70rem;
         flex-direction: column;
 
+        @include breakpoint($sm-bp) {
+            width: 80%;
+        }
+
         .mainImg {
             width: 60rem;
+
+            @include breakpoint($sm-bp) {
+                width: 20rem;
+            }
         }
     }
     
@@ -559,15 +681,23 @@
         left: 50%;
         transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
         background: #fff;
-        width: 400px;
-        padding: 25px;
+        width: 40rem;
+        padding: 2.5rem;
         transition: 0.5s all;
         display: flex;
         width: 70rem;
         flex-direction: column;
 
+        @include breakpoint($sm-bp) {
+            width: 80%;
+        }
+
         .mainImg {
             width: 60rem;
+
+            @include breakpoint($sm-bp) {
+                width: 20rem;
+            }
         }
     }
     
@@ -603,15 +733,23 @@
         left: 50%;
         transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
         background: #fff;
-        width: 400px;
-        padding: 25px;
+        width: 40rem;
+        padding: 2.5rem;
         transition: 0.5s all;
         display: flex;
         width: 70rem;
         flex-direction: column;
 
+        @include breakpoint($sm-bp) {
+            width: 80%;
+        }
+
         .mainImg {
             width: 60rem;
+
+            @include breakpoint($sm-bp) {
+                width: 20rem;
+            }
         }
     }
     
@@ -647,15 +785,23 @@
         left: 50%;
         transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
         background: #fff;
-        width: 400px;
-        padding: 25px;
+        width: 40rem;
+        padding: 2.5rem;
         transition: 0.5s all;
         display: flex;
         width: 70rem;
         flex-direction: column;
 
+        @include breakpoint($sm-bp) {
+            width: 80%;
+        }
+
         .mainImg {
             width: 60rem;
+
+            @include breakpoint($sm-bp) {
+                width: 20rem;
+            }
         }
     }
     
@@ -669,5 +815,90 @@
         width: 4.4rem;
         height: 4.4rem;
         cursor: pointer;
+
+        @include breakpoint($sm-bp) {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+    }
+
+
+    
+
+
+    .swiperContainerMobile {
+        display: none;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Arial';
+        font-style: normal;
+        position: relative;
+        margin-top: 8rem;
+
+
+        @include breakpoint($lg-bp) {
+            display: block;
+        }
+
+        @include breakpoint($sm-bp) {
+            display: none;
+        }
+
+
+        .swiper-slide {
+            img {
+                width: 40rem;
+                height: 50rem;
+            }
+        }
+
+    }
+
+
+
+    .servicesSwiperMobile {
+        display: none;
+
+        @include breakpoint($lg-bp) {
+            display: block;
+        }
+
+        @include breakpoint($sm-bp) {
+            display: none;
+        }
+    }
+
+    .servicesSwiper {
+        @include breakpoint($lg-bp) {
+            display: none;
+        }
+    }
+
+
+    .swiperContainerMobile500 {
+        display: none;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Arial';
+        font-style: normal;
+        position: relative;
+        margin-top: 8rem;
+
+
+        @include breakpoint($sm-bp) {
+            display: block;
+            
+        }
+    }
+
+
+    .servicesSwiperMobile500 {
+        display: none;
+        margin-left: 2rem;
+        @include breakpoint($sm-bp) {
+            display: block;
+        }
     }
 }
