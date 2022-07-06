@@ -8,6 +8,16 @@
     margin-top: 2rem;
     margin-bottom: 10rem;
 
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
     .subTitle {
         font-weight: 400;
         font-size: 1.6rem;
@@ -22,6 +32,11 @@
         align-items: center;
         margin-top: 4rem;
         margin-bottom: 3rem;
+        flex-wrap: wrap;
+
+        @include breakpoint($lg-bp) {
+            justify-content: center;
+        }
     }
 
     .leftContainer {
@@ -70,12 +85,24 @@
             
             width: 60.6rem;
             height: 34rem;
+
+            @include breakpoint($lg-bp) {
+                width: 100%;
+            }
+            @include breakpoint($sm-bp) {
+                width: 30rem;
+            }
         }
     }
 
     .btnContainer {
         display: flex;
         gap: 3rem;
+        flex-wrap: wrap;
+
+        @include breakpoint($lg-bp) {
+            justify-content: center;
+        }
         button {
             display: flex;
             border: 0.1rem solid #004B71;
@@ -84,7 +111,7 @@
             width: 60.6rem;
             align-items: center;
             gap: 2rem;
-            
+            transition: 0.2s ease-in-out;
             
             
                 .textContainer {
@@ -98,11 +125,12 @@
                         text-transform: uppercase;
                         color: #42515A;
                     }
-                }
-            
+                }           
+        }
 
-            
-            
+        button:hover {
+            transition: 0.2s ease-in-out;
+            border: 0.1rem solid #00b1e3;
         }
     }
 }

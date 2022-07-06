@@ -11,6 +11,16 @@
     display: flex;
     flex-direction: column;
 
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
     table {
         border-collapse: collapse;
         border: 0.1rem solid #DDDDDD;
@@ -56,6 +66,10 @@
                     padding: 2rem;
                     border-collapse: collapse;
                     border: 0.1rem solid #DDDDDD;
+
+                    @include breakpoint($sm-bp) {
+                        padding: 1rem;
+                    }
                 }
             }
         }

@@ -7,6 +7,16 @@
     font-family: 'Arial';
     font-style: normal;
 
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
     .titleContainer {
         margin-bottom: 6.4rem;
 
@@ -28,6 +38,12 @@
             color: #E30016;
             text-decoration-line: underline;
             margin-top: 2.4rem;
+            transition: 0.2s ease-out;
+        }
+
+        .contacts:hover {
+            color: #aa0011;
+            transition: 0.2s ease-out;
         }
     }
 
@@ -94,6 +110,10 @@
         .galleryBlockContainer {
             display: flex;
             gap: 3.2rem;
+
+            @include breakpoint($lg-bp) {
+                justify-content: center;
+            }
 
             .container {
                 p {

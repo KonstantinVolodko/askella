@@ -7,12 +7,28 @@
     font-family: 'Arial';
     font-style: normal;
 
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
     a {
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 150%;
         color: #00B1E4;
         text-decoration: none;
+        transition: 0.2s ease-out;
+    }
+
+    a:hover {
+        transition: 0.2s ease-out;
+        text-decoration: underline;
     }
 
     h1 {
@@ -85,6 +101,10 @@
                 color: #42515A;
                 gap: 1rem;
                 margin-left: 5.6rem;
+
+                @include breakpoint($sm-bp) {
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -104,13 +124,17 @@
             width: 100%;
 
             .imgContainer {
-                width: 37.5rem;
                 padding-left: 0.85rem;
                 padding-top: 2.75rem;
                 padding-bottom: 2.65rem;
                 
                 img {
                     border-right: 0.1rem solid #939DA3;
+                    width: 37.5rem;
+                    
+                    @include breakpoint($sm-bp) {
+                        width: 17rem;
+                    }
                 }
             }
 

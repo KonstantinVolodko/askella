@@ -8,9 +8,22 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
 
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
     .tabs__nav {
         display: flex;
         gap: 3rem;
+        @include breakpoint($sm-bp) {
+            gap: 0;
+        }
 
         .tabs__nav-btn {
             display: flex;
@@ -63,6 +76,10 @@
                 text-align: center;
                 text-transform: uppercase;
                 color: #42515A;
+
+                @include breakpoint($sm-bp) {
+                    gap: 0;
+                }
                 
 
                 .compozContainer {
@@ -99,6 +116,11 @@
                 align-items: flex-start;
                 margin-bottom: 4rem;
                 flex-direction: column;
+
+                @include breakpoint($sm-bp) {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
         
                 p {
                     font-weight: 400;

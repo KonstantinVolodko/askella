@@ -269,15 +269,26 @@ let btnBack = document.querySelector('.btnBackMenu')
 
 console.log(btnBack)
 if (btnBack != null) {
-  btnBack.addEventListener('click', () => {
+    btnBack.addEventListener('click', () => {
     document.querySelector('.menu_mobile').classList.add('active');
     document.querySelector('.close-menu').classList.add('close-menu-active');
   })
+
+  let links = document.querySelectorAll(".link")
+  if (links.length > 0) {
+    links.forEach((e) => {
+      e.addEventListener('click', () => {
+        document.querySelector('.menu_mobile').classList.remove('active');
+        document.querySelector('.close-menu').classList.remove('close-menu-active')
+        })
+    })
+  }
   
-  
-  document.querySelector('.close-menu').addEventListener('click', () => {
+    document.querySelector('.close-menu').addEventListener('click', () => {
     document.querySelector('.menu_mobile').classList.remove('active');
     document.querySelector('.close-menu').classList.remove('close-menu-active')
+
+    
   })
 
 

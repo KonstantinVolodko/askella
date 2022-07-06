@@ -8,6 +8,16 @@
     font-style: normal;
     margin-bottom: 10rem;
 
+    @include breakpoint($xl-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
     .textContainer {
         font-weight: 400;
         font-size: 1.6rem;

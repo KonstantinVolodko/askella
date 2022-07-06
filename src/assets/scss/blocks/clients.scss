@@ -9,6 +9,19 @@
     display: flex;
     gap: 3rem;
     margin-bottom: 10rem;
+    flex-wrap: wrap;
+    
+    
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        justify-content: center;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
 
     .leftContainer, .rightContainer {
         display: flex;
@@ -19,9 +32,15 @@
             display: flex;
             padding: 2rem;
             gap: 3rem;
-            border: 1px solid #939DA3;
+            border: 0.1rem solid #939DA3;
             align-items: center;
             width: 60.3rem;
+
+            @include breakpoint($sm-bp) {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                width: auto;
+            }
     
             h1 {
                 font-weight: 700;

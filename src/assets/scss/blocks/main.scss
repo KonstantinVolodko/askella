@@ -73,6 +73,9 @@
             top: 0;
             z-index: 1;
             right: 0.2%;
+            cursor: pointer;
+            transition: 0.3s ease-out;
+
 
             p {
                 font-weight: 700;
@@ -85,6 +88,14 @@
                 
             }
         }
+
+        .newClients:hover {
+            background: url(../images/main/newClientsHover.png);
+            background-position: bottom;
+            background-size: 100%;
+            transition: 0.3s ease-out;
+        }
+
 
         .history {
             clip-path: polygon(50% 100%, 0 0, 100% 0);
@@ -101,6 +112,8 @@
             z-index: 1;
             top: 52%;
             right: 0.2%;
+            cursor: pointer;
+            transition: 0.3s ease-out;
 
             p {
                 font-weight: 700;
@@ -112,6 +125,13 @@
                 padding-top: 3rem;
                 
             }
+        }
+
+        .history:hover {
+            background: url(../images/main/historyHover.png);
+            background-size: 130%;
+            background-position: bottom;
+            transition: 0.3s ease-out;
         }
 
         .strategy {
@@ -129,6 +149,8 @@
             bottom: 0;
             right: 10.55%;
             z-index: 2;
+            cursor: pointer;
+            transition: 0.3s ease-out;
 
             p {
                 font-weight: 700;
@@ -140,6 +162,13 @@
                 padding-bottom: 2rem;
                 
             }
+        }
+
+        .strategy:hover {
+            background: url(../images/main/chessHover.png);
+            background-size: 100%;
+            background-position: bottom;
+            transition: 0.3s ease-out;
         }
 
         
@@ -183,6 +212,14 @@
                 @include breakpoint($xl-bp) {
                     gap: 3.7%;
                 }
+
+                @include breakpoint($rm-bp) {
+                    gap: 3.75%;
+                }
+
+                // @include breakpoint($bm-bp) {
+                //     gap: 3.6%;
+                // }
                 
                 .triangle {
                     img {
@@ -516,11 +553,10 @@
             align-items: center;
             gap: 3rem;
             margin-top: 4rem;
+            overflow-x: scroll;
+            padding-bottom: 2rem;
 
-            @include breakpoint($xl-bp) {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+            
 
             a {
                 img {
@@ -533,7 +569,9 @@
                 border: none;
                 padding: 0;
             }
+
         }
+
 
 
         .contactContainer {
@@ -598,6 +636,12 @@
                     align-items: center;
                     color: #FFFFFF;
                     justify-content: center;
+                    transition: 0.3 ease-out;
+                }
+
+                button:hover {
+                    transition: 0.3 ease-out;
+                    background: #aa0011;
                 }
             }
         }
@@ -896,9 +940,19 @@
 
     .servicesSwiperMobile500 {
         display: none;
-        margin-left: 2rem;
         @include breakpoint($sm-bp) {
             display: block;
         }
     }
 }
+
+
+.documentContainer::-webkit-scrollbar { width: 1rem}
+
+.documentContainer::-webkit-scrollbar-track { background: #e7e7e7 } 
+
+.documentContainer::-webkit-scrollbar-thumb { -webkit-border-radius: 0.5rem; border-radius: 0.5rem; background: #004b71; } 
+
+.documentContainer::-webkit-scrollbar-thumb:window-inactive { background: #006192; }
+
+.documentContainer::-webkit-scrollbar-thumb:hover { background: #006192; width:20px} 

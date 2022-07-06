@@ -8,11 +8,24 @@
     margin-top: 3rem;
     margin-bottom: 10rem;
 
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
     .newsBlockContainer {
         display: flex;
         gap: 3rem;
         flex-wrap: wrap;
         
+        @include breakpoint($lg-bp) {
+            justify-content: center;
+        }
 
         .container {
             display: flex;

@@ -6,12 +6,22 @@
     font-style: normal;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 150%;
     max-width: 130rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
     
     .homeIco {
         width: 2rem;
@@ -28,6 +38,12 @@
                 color: #42515A;
                 text-decoration: none;
                 text-decoration-line: underline;
+                transition: 0.2s ease-out;
+            }
+
+            a:hover {
+                transition: 0.2s ease-out;
+                color: #004B71;
             }
 
             p {
@@ -62,13 +78,29 @@
         flex-direction: column;
         gap: 3rem;
         .block {
-            border: 1px solid #42515A;
+            border: 0.1rem solid #42515A;
             display: flex;
             padding-left: 4rem;
             padding-top: 3rem;
             padding-right: 3rem;
             padding-bottom: 3rem;
             gap: 13rem;
+
+            @include breakpoint($lg-bp) {
+                gap: 3rem;
+            }
+
+            @include breakpoint($sm-bp) {
+                flex-wrap: wrap;
+            }
+
+            img {
+                width: 47rem;
+                @include breakpoint($sm-bp) {
+                    width: 30rem;
+                }
+            }
+
             .textContainer {
                 display: flex;
                 flex-direction: column;
@@ -85,6 +117,12 @@
                     line-height: 150%;
                     text-transform: uppercase;
                     color: #FFFFFF;
+                    transition: 0.3s ease-out;
+                }
+
+                button:hover {
+                    transition: 0.3s ease-out;
+                    background: #005d8b;
                 }
 
                 h1 {

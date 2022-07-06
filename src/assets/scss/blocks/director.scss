@@ -12,6 +12,16 @@
     color: #42515A;
     margin-bottom: 10rem;
 
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
     h1 {
         font-weight: 700;
         font-size: 2rem;

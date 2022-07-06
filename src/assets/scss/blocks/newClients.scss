@@ -15,6 +15,27 @@
     margin-right: auto;
     margin-bottom: 7rem;
 
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .rightImgContainer {
+        img {
+            width: 48.6rem;
+            
+
+            @include breakpoint($sm-bp) {
+                width: 35rem;
+            }
+        }
+    }
+
     .servicesTitle {
         font-weight: 700;
         font-size: 2.4rem;
@@ -33,6 +54,11 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 4.8rem;
+        
+        @include breakpoint($lg-bp) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
         .aboutUsContainer {
             max-width: 64rem;
@@ -103,4 +129,15 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 4.5rem;
+
+
+    @include breakpoint($lg-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
     }

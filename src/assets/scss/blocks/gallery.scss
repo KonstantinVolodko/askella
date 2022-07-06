@@ -19,8 +19,20 @@
     .galleryBlockContainer {
         display: flex;
         gap: 3.2rem;
+        flex-wrap: wrap;
+        @include breakpoint($sm-bp) {
+            justify-content: center;
+        }
 
         .container {
+
+            img {
+                width: 39.2rem;
+                
+                @include breakpoint($sm-bp) {
+                    width: 30rem;
+                }
+            }
             p {
                 margin-top: 1rem;
                 font-weight: 700;
