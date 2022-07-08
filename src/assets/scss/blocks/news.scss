@@ -8,6 +8,11 @@
     margin-top: 3rem;
     margin-bottom: 10rem;
 
+    @include breakpoint($xl-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     @include breakpoint($lg-bp) {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -22,6 +27,10 @@
         display: flex;
         gap: 3rem;
         flex-wrap: wrap;
+
+        @include breakpoint($xl-bp) {
+            justify-content: center;
+        }
         
         @include breakpoint($lg-bp) {
             justify-content: center;
@@ -48,6 +57,7 @@
                 font-size: 1.6rem;
                 line-height: 150%;
                 color: #42515A;
+                text-decoration: none;
             }
 
             .subtitle {

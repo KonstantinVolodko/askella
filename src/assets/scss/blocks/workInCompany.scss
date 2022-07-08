@@ -6,6 +6,12 @@
     margin-right: auto;
     font-family: 'Arial';
     font-style: normal;
+
+    @include breakpoint($xl-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     @include breakpoint($lg-bp) {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -101,8 +107,16 @@
         position: relative;
         margin-bottom: 10rem;
 
+        @include breakpoint($lb-bp) {
+            width: auto;
+            padding-top: 2rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+        }
+
         @include breakpoint($sm-bp) {
-            width: 36rem;
+            width: auto;
             padding-top: 2rem;
             padding-right: 1rem;
             padding-left: 1rem;
@@ -120,6 +134,10 @@
             position: absolute;
             top: -2.6rem;
             left: 27.2rem;
+
+            @include breakpoint($lb-bp) {
+                left: 19.2rem;
+            }
 
             @include breakpoint($sm-bp) {
                 left: 21%;

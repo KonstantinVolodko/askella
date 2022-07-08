@@ -11,6 +11,12 @@
     margin-top: 2rem;
     margin-bottom: 10rem;
 
+    @include breakpoint($xl-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        justify-content: center;
+    }
+
     @include breakpoint($lg-bp) {
         padding-left: 1rem;
         padding-right: 1rem;

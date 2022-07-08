@@ -13,6 +13,12 @@
     margin-left: auto;
     margin-right: auto;
 
+
+    @include breakpoint($xl-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     @include breakpoint($lg-bp) {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -21,6 +27,7 @@
     @include breakpoint($sm-bp) {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        display: none;
     }
     
     .homeIco {
@@ -62,6 +69,11 @@
     font-style: normal;
     margin-bottom: 10rem;
 
+    @include breakpoint($xl-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .servicesTitle {
     font-weight: 700;
     font-size: 2.4rem;
@@ -94,11 +106,27 @@
                 flex-wrap: wrap;
             }
 
+            @include breakpoint($lb-bp) {
+                // flex-wrap: wrap;
+                // justify-content: center;
+            }
+
             img {
-                width: 47rem;
+                width: 43rem;
+
+                @include breakpoint($lb-bp) {
+                    width: 40rem;
+                }
+
+                @include breakpoint($lb-bp) {
+                    width: 24rem;
+                }
+
                 @include breakpoint($sm-bp) {
                     width: 30rem;
                 }
+
+                
             }
 
             .textContainer {

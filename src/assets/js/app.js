@@ -18,7 +18,7 @@ const swiper = new Swiper('.mySwiper', {
 
   const swiper2 = new Swiper(".servicesSwiper", {
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 30,
     // allowTouchMove: false,
     loop: true,
     navigation: {
@@ -216,6 +216,98 @@ const swiper = new Swiper('.mySwiper', {
     if(e.target === popupBg5) { // Если цель клика - фот, то:
         popupBg5.classList.remove('active'); // Убираем активный класс с фона
         popup5.classList.remove('active'); // И с окна
+    }
+    });
+    }
+
+
+
+    let popupBg6 = document.querySelector('.popup__bg6'); // Фон попап окна
+    let popup6 = document.querySelector('.popup6'); // Само окно
+    let openPopupButtons6 = document.querySelectorAll('.open-popup6'); // Кнопки для показа окна
+    let closePopupButton6 = document.querySelector('.close-popup6'); // Кнопка для скрытия окна
+
+    if(popupBg6 != null && popup6 != null && openPopupButtons6 != null && closePopupButton6 != null) {
+      
+    
+    openPopupButtons6.forEach((button) => { // Перебираем все кнопки
+      button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+          e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+          popupBg6.classList.add('active'); // Добавляем класс 'active' для фона
+          popup6.classList.add('active'); // И для самого окна
+      })
+    });
+    
+    closePopupButton6.addEventListener('click',() => { // Вешаем обработчик на крестик
+    popupBg6.classList.remove('active'); // Убираем активный класс с фона
+    popup6.classList.remove('active'); // И с окна
+    });
+    
+    document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+    if(e.target === popupBg6) { // Если цель клика - фот, то:
+        popupBg6.classList.remove('active'); // Убираем активный класс с фона
+        popup6.classList.remove('active'); // И с окна
+    }
+    });
+    }
+
+
+
+    let popupBg7 = document.querySelector('.popup__bg7'); // Фон попап окна
+    let popup7 = document.querySelector('.popup7'); // Само окно
+    let openPopupButtons7 = document.querySelectorAll('.open-popup7'); // Кнопки для показа окна
+    let closePopupButton7 = document.querySelector('.close-popup7'); // Кнопка для скрытия окна
+
+    if(popupBg7 != null && popup7 != null && openPopupButtons7 != null && closePopupButton7 != null) {
+      
+    
+    openPopupButtons7.forEach((button) => { // Перебираем все кнопки
+      button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+          e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+          popupBg7.classList.add('active'); // Добавляем класс 'active' для фона
+          popup7.classList.add('active'); // И для самого окна
+      })
+    });
+    
+    closePopupButton7.addEventListener('click',() => { // Вешаем обработчик на крестик
+    popupBg7.classList.remove('active'); // Убираем активный класс с фона
+    popup7.classList.remove('active'); // И с окна
+    });
+    
+    document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+    if(e.target === popupBg7) { // Если цель клика - фот, то:
+        popupBg7.classList.remove('active'); // Убираем активный класс с фона
+        popup7.classList.remove('active'); // И с окна
+    }
+    });
+    }
+
+
+    let popupBg8 = document.querySelector('.popup__bg8'); // Фон попап окна
+    let popup8 = document.querySelector('.popup8'); // Само окно
+    let openPopupButtons8 = document.querySelectorAll('.open-popup8'); // Кнопки для показа окна
+    let closePopupButton8 = document.querySelector('.close-popup8'); // Кнопка для скрытия окна
+
+    if(popupBg8 != null && popup8 != null && openPopupButtons8 != null && closePopupButton8 != null) {
+      
+    
+    openPopupButtons8.forEach((button) => { // Перебираем все кнопки
+      button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+          e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+          popupBg8.classList.add('active'); // Добавляем класс 'active' для фона
+          popup8.classList.add('active'); // И для самого окна
+      })
+    });
+    
+    closePopupButton8.addEventListener('click',() => { // Вешаем обработчик на крестик
+    popupBg8.classList.remove('active'); // Убираем активный класс с фона
+    popup8.classList.remove('active'); // И с окна
+    });
+    
+    document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+    if(e.target === popupBg8) { // Если цель клика - фот, то:
+        popupBg8.classList.remove('active'); // Убираем активный класс с фона
+        popup8.classList.remove('active'); // И с окна
     }
     });
     }

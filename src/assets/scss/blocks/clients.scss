@@ -28,6 +28,11 @@
         flex-direction: column;
         gap: 3rem;
 
+        @include breakpoint($xl-bp) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .container {
             display: flex;
             padding: 2rem;
@@ -40,21 +45,28 @@
                 padding-left: 0.5rem;
                 padding-right: 0.5rem;
                 width: auto;
+                flex-direction: column;
+            }
+
+            .textContainer {
+    
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    color: #004B71;
+                }
+        
+                p {
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    color: #42515A;
+                }
             }
     
-            h1 {
-                font-weight: 700;
-                font-size: 1.6rem;
-                line-height: 150%;
-                color: #004B71;
-            }
-    
-            p {
-                font-weight: 400;
-                font-size: 1.6rem;
-                line-height: 150%;
-                color: #42515A;
-            }
+            
         }
     }
 

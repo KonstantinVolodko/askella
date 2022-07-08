@@ -6,6 +6,11 @@
     margin-right: auto;
     font-family: 'Arial';
     font-style: normal;
+    
+    @include breakpoint($xl-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
     @include breakpoint($lg-bp) {
         padding-left: 1rem;
@@ -35,6 +40,10 @@
         margin-bottom: 4.8rem;
         gap: 1.4rem;
         
+        @include breakpoint($xl-bp) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
         @include breakpoint($lg-bp) {
             flex-wrap: wrap;
@@ -86,12 +95,12 @@
             }
         }
     
-        .aboutContentContainer {
+        ul {
             display: flex;
             flex-direction: column;
             gap: 0.8rem;
     
-            .textContainer {
+            li {
                 display: flex;
                 font-weight: 400;
                 font-size: 1.6rem;
